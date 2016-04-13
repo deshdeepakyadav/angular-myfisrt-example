@@ -1,0 +1,39 @@
+<!Doctype>
+<html ng-app="">
+<head>
+<title>My Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js" ></script>
+
+<style>
+.container{text-align:left;padding:50px 0 50px 0;}
+.marginTop{margin-top:30px;}
+.marginTop{margin-top:20px;}
+</style>
+</head>
+<body>
+<div id="wrapper" class="container" >
+	<div>
+		<label for="nm">Name</label>
+		<input id="nm" type="text" name="nameText" ng-model="nameText" />
+	</div>
+	
+	<div id="bindExpr" class="marginTop">
+	Data Binding here in expression : {{nameText}}
+	</div>
+	
+	<div id="bindDir" class="marginTop">
+	Data Binding here in expression ng-bind: <span ng-bind="nameText"></span><br/>
+  	Data Binding here in expression ng:bind:<span ng:bind="nameText"></span> <br/>
+  	Data Binding here in expression ng_bind:<span ng_bind="nameText"></span> <br/>
+  	Data Binding here in expression data-ng-bind:<span data-ng-bind="nameText"></span> <br/>
+	Data Binding here in expression x-ng-bind:<span x-ng-bind="nameText"></span> <br/>
+
+	</div>
+
+	
+</div>
+
+
+</body>
+</html>
